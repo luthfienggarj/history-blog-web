@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+
+<!--------Library, Boostrap,  Font, Icons, Etc.------->
+ <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Moonlight Sonata</title>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ 
+ <!--------Header Logo, Home, About, Categories, Article------->
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><img src="./independence2-removebg.png"</a>
+            <style>a:link {text-decoration: none;}</style>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><b><a href="PROJEK_HOME.html">HOME</a></b></li>
+                    <li><b><a href="about.html">ABOUT</a></b></li>
+                    <li><b><a href="categories.html">CATEGORIES</a></b></li>
+                    <li><b><a href="contact.html">CONTACT</a></b></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+<div class="sec">
+    <h1>(Gambar : 1001inventions)</h1>
+
+    <h2>Warisan Ilmuan Dinasti Abbasiyah Untuk Dunia</h2>
+    <p>Saat pertama kali menggasak Kekaisaran Byzantium dan filsafat. Bangsa Arab tidak memiliki fundamen sains dan filsafat. Seiring berjalannya waktu saat peradaban islam
+       beralih ke pemerintahan Dinasti Umayyah, mereka mulai menyerap kebudayaan Byzantium dan Persia serta mempelajari karya-karya Yunani Kuno, bahkan diterjemahkan ke bahasa Arab.
+       
+       <br><br>Di abad ke-8 dan ke-9 pada masa Kekhalifahan Abbasiyah, peradaban Muslim memasuki <i>"Golden Age"</i>, yang berarti melampaui kejayaan di segala bidang, terutama
+       ilmu pengertahuan karena di peradaban Eropa ilmu pengertahuan sedang mengalami kemandekan disana.
+    
+       <br><br> Pada Di masa pemerintahan Khalifah Al-Manshur hiduplah tokoh <b>Abu Hanifah (700-767 M)</b>, pelopor Mazhab Hanafi yang cenderung dipengaruhi kaum intelektual Muslim di kufah yakni aliran Rasionalisme.
+       Di masa Khalifah Al-Mahdi (775-785 M) hiduplah tokoh di Madinah, <b>Imam Malik (713-195 M)</b>, pelopor aliran tradisional dengan pendekatan tekstual. Kemudian masa Al-Mamun
+       ada <b>Imam Syafi'i (767-820 M)</b> serta <b>Imam Ahmad bin Hanbal (780-855 M)</b> beliau juga menulis kita Fiqh dan menjadi mazhab sendiri. Muncul juga pemikir Islam.
+       yang mengedepankan rasionalitas yang disebut Kaum Mutazilah seperti <b>Abu Huzail (752-849 M)</b> dan <b>An-Nazam (801-835 M)</b> yang menyebarkan ide-idenya pada periode ini.
+    
+       <br><br>Tokoh-tokoh yang memiliki peran besar bagi kelangsungan ilmu
+    
+    
+    
+    </p> 
+</div>
+
+<!--------Footer------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida sem eget semper lobortis. Maecenas vitae leo mauris.</p>
+    
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-o"></i> by Luthfi Enggar Juang</p>
+</section>
+
+<!--------JavaScipt for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#fbee97, #adedd5);
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2) ),url('./Baghdad.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gideon Roman', cursive;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+nav .fa
+{
+    display: none;
+}
+/*---Gradasi Warna Di Bawah Gambar----*/
+section::before
+{
+    content: '';
+    position: absolute; /*Masalah pada open close  toogle menu*/
+    bottom: 0%;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h1
+{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: yellow;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+.sec p
+{
+    font-size: 1em;
+    color: aliceblue;
+}
+.sec i
+{
+    color: gold;
+}
+.sec b
+{
+    color: lightgreen;
+}
+#icon
+{
+    width: 30px;
+    cursor: pointer;
+}
+
+/*-------------FOOTER--------------*/
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #1c0522;
+
+}
+.footer h4
+{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: aliceblue;
+}
+.footer p
+{
+    color: aliceblue;
+}
+.icons .fa
+{
+    color: lightgreen;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.fa-heart-o
+{
+    color: lightgreen;
+}
+
+/*----Media Code----*/
+
+@media(max-width: 700px)
+{   
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+    .text-box p
+    {
+    margin: 10px 0 10px;
+    font-size: 15px;
+    color:#ffd9b8;
+    }
+    .text-boxx
+    {
+        font-size: 9px;
+        top: 95%;
+    }
+    .nav-links ul li
+    {
+        display: block;
+        letter-spacing: 3px;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: linear-gradient(#A71D31, #3F0D12);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        font-size: 22px;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .nav-links ul
+    {
+        padding: 20px;
+    }
+    .header
+    {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2) ),url('./Baghdad.jpeg');
+    background-attachment: fixed;
+    background-size: contain; /*Jika mau ubah ke cover*/
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    }
+    
+    section::before
+    {
+    content: '';
+    position: relative; /*Masalah pada open close  toogle menu*/
+    bottom: 0%;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+    }
+}
+</style>
+</body>
+</html>
